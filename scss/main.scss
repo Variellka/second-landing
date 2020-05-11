@@ -1,6 +1,8 @@
 $fontOpen: 'Open Sans', Arial, Helvetica, sans-serif;
 $fontRal: 'Raleway', Arial, Helvetica, sans-serif;
 $colorRed: #e84545;
+$colorBlue: #2d3033;
+$colorGray: #6c7279;
 
 @mixin button () {
   border: none;
@@ -18,6 +20,20 @@ $colorRed: #e84545;
     color: $colorRed;
   }
 }
+
+@mixin font-h2 (){
+  font-family: $fontRal;
+  font-size: 14px;
+  font-weight: 700;
+  color: $colorBlue;
+  text-transform: uppercase;
+}
+@mixin font-p (){
+  font-family: $fontRal;
+  font-size: 14px;
+  color: $colorGray;
+}
+
 
 body {
   width: 100%;
@@ -87,7 +103,7 @@ header {
   display: flex;
   flex-direction: column;
   .main-content {
-    max-width: 1180px;
+    max-width: 1170px;
     padding-top: 267px;
     h1 {
       margin: auto;
@@ -116,4 +132,46 @@ header {
   }
 }
 
+.features {
+  width: 100%;
+  height: 692px;
+  padding: 0;
+  margin: 0;
+  .features-content {
+    max-width: 1170px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    height: 100%;
+    padding-top: 120px;
+    padding-bottom: 124px;
+    box-sizing: border-box;
+    .feature-single {
+      width: 33%;
+      box-sizing: border-box;
+      padding: 0 40px;
+      margin-bottom: 74px;
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+     h2 {
+       @include font-h2 ();
+       text-align: center;
+       padding: 34px 0 26px 0;
+       margin: 0;
+     }
+      p {
+        @include font-p ();
+        text-align: center;
+        margin: 0;
+      }
+    }
+  }
+}
 
