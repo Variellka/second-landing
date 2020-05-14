@@ -57,11 +57,9 @@ header {
   display: flex;
   flex-direction: column; }
   .main .main-content {
-    max-width: 1170px;
     padding-top: 267px; }
     .main .main-content h1 {
       margin: auto;
-      width: 870px;
       font-family: "Open Sans", Arial, Helvetica, sans-serif;
       font-size: 65px;
       line-height: 71px;
@@ -74,7 +72,6 @@ header {
       font-size: 22px;
       line-height: 33px;
       color: white;
-      width: 920px;
       padding-bottom: 66px;
       margin: 0; }
     .main .main-content button {
