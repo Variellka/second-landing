@@ -65,11 +65,11 @@ header {
     max-width: 1180px;
     display: flex;
     flex-direction: row;
+    width: 100%;
     justify-content: space-between;
     margin: auto;
     padding: 38px 0;
     .header-logo {
-      margin: auto 365px auto 0;
       padding: 0;
       height: 23px;
       width: 189px;
@@ -110,7 +110,6 @@ header {
   background-image: url("../images/background.png");
   background-position: center;
   background-size: cover;
-  height: 750px;
   width: 100%;
   text-align: center;
   align-items: center;
@@ -139,6 +138,7 @@ header {
     button {
       @include button();
       width: 200px;
+      margin-bottom: 100px;
     }
   }
 }
@@ -179,8 +179,8 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   .work {
-    width: calc(100% / 4);
-    height: 350px;
+    width: 25%;
+    height: (25vw/(350px/270px));
     background-position: center;
     background-size: cover;
     margin: 0;
@@ -193,7 +193,7 @@ header {
     &:hover .inner-text {
       display: block;
       background: rgba(232, 69, 69, 0.8);
-      height: 350px;
+      height: (25vw/(350px/270px));
     }
     .inner-text {
       display: none;
