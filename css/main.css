@@ -92,10 +92,6 @@ header {
         color: #e84545; }
 
 .features-content {
-  /* max-width: 1170px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; */
   height: 692px;
   margin: auto;
   padding-top: 120px;
@@ -205,6 +201,37 @@ header {
     .team .social i {
       color: #cacaca;
       font-size: 18px; }
+
+.clients {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  height: 500px;
+  box-sizing: border-box; }
+  .clients .client-photo, .clients .client-text {
+    width: 50%; }
+  .clients .client-text {
+    background-color: #53354a;
+    padding-top: 115px;
+    padding-left: 85px;
+    color: white; }
+    .clients .client-text .cardo {
+      font-family: 'Cardo', serif;
+      font-size: 36px; }
+    .clients .client-text .client-name {
+      font-family: "Raleway", Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      color: #2d3033;
+      text-transform: uppercase;
+      color: white;
+      font-size: 13px; }
+  .clients .client-photo {
+    background-image: url("../images/susan.png");
+    background-position: center;
+    background-size: cover; }
 
 .download {
   height: 340px;

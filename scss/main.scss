@@ -142,7 +142,6 @@ header {
     }
   }
 }
-
 .features-content {
     height: 692px;
     margin: auto;
@@ -174,8 +173,6 @@ header {
       }
     }
   }
-
-
 .works {
   width: 100%;
   display: flex;
@@ -218,7 +215,6 @@ header {
     }
   }
 }
-
 .team {
   padding-top: 102px;
   padding-bottom: 100px;
@@ -260,6 +256,41 @@ header {
     }
 }
 
+.clients {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  height: 500px;
+  box-sizing: border-box;
+  .client-photo, .client-text {
+    width: 50%;
+  }
+  .client-text {
+    background-color: #53354a;
+    padding-top: 115px;
+    padding-left: 85px;
+    color: white;
+    .cardo {
+    font-family: 'Cardo', serif;
+      font-size: 36px;
+    }
+    .client-name{
+      @include font-h2 ();
+      color: white;
+      font-size: 13px;
+    }
+  }
+  .client-photo {
+    background-image: url("../images/susan.png");
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+
+
 .download {
   height: 340px;
   margin: auto;
@@ -285,7 +316,6 @@ header {
     }
   }
 }
-
 .contacts {
   background-color: $colorfoot1;
   height: 250px;
