@@ -374,7 +374,7 @@ header {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 765px) {
   .main {
     .main-content {
       padding-top: 200px;
@@ -456,4 +456,83 @@ header {
   }
 }
 
+@media (max-width: 1024px) {
+  .main {
+    .main-content {
+      padding-top: 150px;
+      margin-left: 15px;
+      margin-right: 15px;
+
+      h1 {
+        font-size: 40px;
+      }
+
+      p {
+        padding-bottom: 30px;
+      }
+
+      button {
+        margin-bottom: 60px;
+      }
+    }
+  }
+  .features-content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .feature-single {
+      margin-bottom: 40px;
+
+      h2, p {
+        font-size: 16px;
+      }
+    }
+  }
+  .works {
+    .work {
+      width: 50%;
+      height: (50vw/(350px/270px));
+      &:hover .inner-text {
+        height: (50vw/(350px/270px));
+      }
+      .inner-text {
+        .inner-text-content
+        h2 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .team {
+    .job {
+      font-size: 15px;
+    }
+    .team-text {
+      font-size: 16px;
+    }
+  }
+  .download {
+    padding: 50px 0;
+    margin-left: 15px;
+    margin-right: 15px;
+    p {
+      font-size: 14px;
+    }
+    button {
+      font-size: 16px;
+    }
+  }
+  .contacts {
+    padding: 30px 0;
+    .footer-header,.footer-text {
+      font-size: 16px;
+    }
+  }
+  .copyright {
+    padding: 20px 0;
+    .footer-text {
+      font-size: 15px;
+    }
+  }
+}
 
