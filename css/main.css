@@ -199,38 +199,87 @@ header {
       color: #cacaca;
       font-size: 18px; }
 
-.clients {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.content-box {
   margin: 0;
   padding: 0;
   height: 100%;
+  width: 100%;
   box-sizing: border-box; }
-  .clients .client-photo, .clients .client-text {
-    width: 50%;
-    height: calc 26.31579vw; }
-  .clients .client-text {
-    background-color: #53354a;
-    padding-top: 115px;
-    padding-left: 85px;
-    color: white; }
-    .clients .client-text .cardo {
-      font-family: 'Cardo', serif;
-      font-size: 36px; }
-    .clients .client-text .client-name {
-      font-family: "Raleway", Arial, Helvetica, sans-serif;
-      font-size: 14px;
-      font-weight: 700;
-      color: #2d3033;
-      text-transform: uppercase;
-      color: white;
-      font-size: 13px;
-      padding-bottom: 182px; }
-  .clients .client-photo {
-    background-image: url("../images/susan.png");
-    background-position: center;
-    background-size: cover; }
+  .content-box .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .content-box .content .client-photo, .content-box .content .client {
+      width: 50%; }
+    .content-box .content .client-photo {
+      background-position: center;
+      background-size: cover; }
+    .content-box .content .client {
+      background-color: #53354a; }
+      .content-box .content .client .client-description {
+        max-width: 590px;
+        padding-top: 115px;
+        padding-left: 85px;
+        color: white;
+        box-sizing: border-box;
+        margin-right: 15px; }
+        .content-box .content .client .client-description .client-text {
+          font-family: 'Cardo', serif;
+          font-size: 36px; }
+        .content-box .content .client .client-description .client-name {
+          font-family: "Raleway", Arial, Helvetica, sans-serif;
+          font-size: 14px;
+          font-weight: 700;
+          color: #2d3033;
+          text-transform: uppercase;
+          color: white;
+          font-size: 13px;
+          padding-bottom: 182px; }
+
+.tab {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #755d6e;
+  cursor: pointer;
+  margin: 0 2px; }
+
+.content-box {
+  position: relative; }
+  .content-box .tabs {
+    position: absolute;
+    left: 65%;
+    bottom: 19%; }
+
+.tab:hover {
+  background: white; }
+
+.tab:checked {
+  background: white; }
+
+.content-box .content {
+  display: none;
+  height: 100%;
+  width: 100%; }
+
+input[type="radio"] {
+  display: none; }
+
+input#one:checked ~ .tabs .tab._1,
+input#two:checked ~ .tabs .tab._2,
+input#three:checked ~ .tabs .tab._3,
+input#three:checked ~ .tabs .tab._4,
+input#three:checked ~ .tabs .tab._5 {
+  cursor: default;
+  color: white; }
+
+input#one:checked ~ .content-box .content._1,
+input#two:checked ~ .content-box .content._2,
+input#three:checked ~ .content-box .content._3,
+input#four:checked ~ .content-box .content._4,
+input#five:checked ~ .content-box .content._5 {
+  display: block;
+  display: flex; }
 
 .download {
   margin: auto;
