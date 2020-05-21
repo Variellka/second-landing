@@ -425,7 +425,9 @@ input#five:checked ~ .content-box .content._5 {
   }
 }
 
-
+.blockscroll{
+  overflow: hidden;
+}
 
 
 @media (max-width: 1024px) {

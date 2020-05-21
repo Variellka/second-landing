@@ -366,6 +366,9 @@ input#five:checked ~ .content-box .content._5 {
     .copyright .footer-text .creator {
       color: white; }
 
+.blockscroll {
+  overflow: hidden; }
+
 @media (max-width: 1024px) {
   .main .main-content {
     padding-top: 150px;
