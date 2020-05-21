@@ -19,16 +19,17 @@
         <div class="header-logo">
             <img src="images/logo.png"/>
         </div>
-        <div class="header-menu">
-            <nav>
-                <ul>
-                    <a href="#"><li>FEATURES</li></a>
-                    <a href="#"><li>WORKS</li></a>
-                    <a href="#"><li>OUR TEAM</li></a>
-                    <a href="#"><li>TESTIMONIALS</li></a>
-                    <a href="#"><li>DOWNLOAD</li></a>
-                </ul>
-            </nav>
+        <div class="menu _open">
+            <div class="burger"></div>
+            <div class="navigation">
+                <nav>
+                        <a href="#FEATURES"><li>FEATURES</li></a>
+                        <a href="#WORKS"><li>WORKS</li></a>
+                        <a href="#OUR TEAM"><li>OUR TEAM</li></a>
+                        <a href="#TESTIMONIALS"><li>TESTIMONIALS</li></a>
+                        <a href="#DOWNLOAD"><li>DOWNLOAD</li></a>
+                </nav>
+            </div>
         </div>
     </div>
 </header>
@@ -39,7 +40,7 @@
         <button>FIND OUT MORE</button>
     </div>
 </div>
-<div class="features-content">
+<div class="features-content" id="FEATURES">
     <div class="container">
         <div class="row text-center">
                 <div class="col-12 col-md-6 col-lg-4 feature-single">
@@ -75,7 +76,7 @@
         </div>
     </div>
 </div>
-<div class="works">
+<div class="works" id="WORKS">
     <div class="work" style="background-image: url(images/work1.png)">
          <div class="inner-text">
              <div class="inner-text-content">
@@ -141,7 +142,7 @@
         </div>
     </div>
 </div>
-<div class="team">
+<div class="team" id="OUR TEAM">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-3 person">
@@ -191,8 +192,7 @@
         </div>
     </div>
 </div>
-
-<div class="clients">
+<div class="clients" id="TESTIMONIALS">
     <div class="tab-main">
         <input type="radio" name="tabs" id="one" checked>
         <input type="radio" name="tabs" id="two">
@@ -261,8 +261,7 @@
         </div>
     </div>
 </div>
-
-<div class="download">
+<div class="download" id="DOWNLOAD">
     <h3>Are You Ready to Start? Download Now For Free!</h3>
     <p>Fusce dapibus, tellus ac cursus commodo</p>
     <button>DOWNLOAD HERE</button>
@@ -300,5 +299,14 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script>
+    let menuBtn = document.querySelector('.burger');
+
+    menuBtn.addEventListener('click', function () {
+        document.querySelector('.menu').classList.toggle('_open');
+    })
+</script>
+
 </body>
 </html>
